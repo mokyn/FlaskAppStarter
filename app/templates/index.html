@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Hi, Welcome to an Example Flask App!</h1>
-    <div><p>Click below to check our a pig latin translator
-        a picture pixel inverter!</p></div>
-    <div>Pig Latin Translator: <a href="/text">Translate now!</a></div>
-    <div>Image Pixel Inverter: <a href="/image">Invert now!</a></div>
-    <div>Plant database search: <a href="/plantsearch">Search now!</a></div>
+    <h1>Mo's Plant/Tree Identifier test!</h1>
+    <p>Upload an image below, then the a call to the API will be made!</p>
+    <form method=post enctype=multipart/form-data>
+        <input type=file name=file>
+        <input type=submit value=Upload>
+      </form>
 {% endblock %}
